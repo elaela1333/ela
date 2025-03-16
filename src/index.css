@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+/* Theme configurations */
+.theme-light {
+  /* Background colors */
+  --color-bg-primary: 255, 255, 255;
+  --color-bg-secondary: 249, 250, 251;
+  --color-bg-accent: 79, 70, 229;
+  --color-bg-panel: 255, 255, 255;
+  
+  /* Text colors */
+  --color-text-primary: 17, 24, 39;
+  --color-text-secondary: 107, 114, 128;
+  --color-text-accent: 79, 70, 229;
+  --color-text-inverse: 255, 255, 255;
+  
+  /* Border colors */
+  --color-border-primary: 229, 231, 235;
+  --color-border-secondary: 209, 213, 219;
+  
+  /* UI elements */
+  --color-button-primary: 79, 70, 229;
+  --color-button-primary-hover: 67, 56, 202;
+  --color-button-secondary: 255, 255, 255;
+}
+
+.theme-dark {
+  /* Background colors - inspired by the screenshot */
+  --color-bg-primary: 24, 24, 27;
+  --color-bg-secondary: 32, 32, 36;
+  --color-bg-accent: 79, 70, 229;
+  --color-bg-panel: 39, 39, 42;
+  
+  /* Text colors */
+  --color-text-primary: 255, 255, 255;
+  --color-text-secondary: 161, 161, 170;
+  --color-text-accent: 129, 140, 248;
+  --color-text-inverse: 17, 24, 39;
+  
+  /* Border colors */
+  --color-border-primary: 63, 63, 70;
+  --color-border-secondary: 82, 82, 91;
+  
+  /* UI elements */
+  --color-button-primary: 79, 70, 229;
+  --color-button-primary-hover: 99, 102, 241;
+  --color-button-secondary: 39, 39, 42;
+}
+
+.theme-current {
+  /* Background colors - current dark theme */
+  --color-bg-primary: 17, 24, 39;
+  --color-bg-secondary: 31, 41, 55;
+  --color-bg-accent: 79, 70, 229;
+  --color-bg-panel: 31, 41, 55;
+  
+  /* Text colors */
+  --color-text-primary: 243, 244, 246;
+  --color-text-secondary: 156, 163, 175;
+  --color-text-accent: 129, 140, 248;
+  --color-text-inverse: 17, 24, 39;
+  
+  /* Border colors */
+  --color-border-primary: 55, 65, 81;
+  --color-border-secondary: 75, 85, 99;
+  
+  /* UI elements */
+  --color-button-primary: 79, 70, 229;
+  --color-button-primary-hover: 99, 102, 241;
+  --color-button-secondary: 31, 41, 55;
+}
+
+/* Theme application */
+.dark {
+  @apply bg-gray-900;
+}
+
+.light {
+  @apply bg-gray-50;
+}
+
+/* Font size adjustments for appointment list */
+.appointment-item {
+  @apply text-sm;
+}
+
+.appointment-item .appointment-client {
+  @apply text-base;
+}
+
+.appointment-item .appointment-time {
+  @apply text-lg;
+}
+
+.appointment-item .appointment-service-tag {
+  @apply text-xs;
+}
